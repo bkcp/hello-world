@@ -116,22 +116,23 @@
         <form action="/taco">
             <p>
                 <label for="username">Enter A Username</label>
-                <input id="username" type="text" placeholder="username">
+                <input id="username" type="text" placeholder="username" name="username">
             </p>
             <p>
                 <label for="password">Password</label>
-                <input id="password" type="password" placeholder="password">
+                <input id="password" type="password" placeholder="password" name="password">
             </p>
             <p>
                 <label for="color">Choose a Color</label>
-                <input id="color" type="color">
+                <input id="color" type="color" name="color">
             </p>
             <p>
                 <label for="number">Choose a Number</label>
-                <input id="number" type="number" placeholder="enter a number">
+                <input id="number" type="number" placeholder="enter a number" name="number">
             </p>
-
-
+            <!--this button goes to form action-->
+            <!--Name attribute is what gets sent to server via form action-->
+            <button>Submit</button>
 
         </form>
 
