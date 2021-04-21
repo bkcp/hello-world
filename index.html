@@ -182,8 +182,8 @@
         <form action="/taco">
             <p>
             <h2>RANGE</h2>
-            <label for="cheese">Amount of Cheese</label>
-            <input type="range" id="cheese" name="q" min="1" max="10" value="1" step="2">
+            <label for="cheese">ACheese</label>
+            <input type="range" id="cheese" name=mount of "q" min="1" max="10" value="1" step="2">
             <select name="cheesetype" id="cheesetype">
                 <option value="limburg">Limburg</option>
                 <option value="gouda">gouda</option>
@@ -201,6 +201,21 @@
             <textarea name="text" id="text" cols="30" rows="10" aria-rowspan="10" aria-colspan="10"
                 placeholder="I said Write!"></textarea>
 
+        </form>
+
+        <h2>Validation</h2>
+        <form action="/dummy">
+            <label for="first">Enter First </label>
+            <input type="text" name="first" id="first" required>
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" placeholder="username" minlength="3" maxlength="5"
+                required>
+            <button>Submit</button>
+
+            <p>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" placeholder="email" required>
+            </p>
         </form>
 
 
