@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML</title>
 </head>
 
 <body>
     <main>
 
-        <h1>This is a Test</h1>
+        <h1>HTML</h1>
         <nav>
             <ul>
                 <a href="https://github.com/bkcp">github</a>
@@ -217,6 +217,48 @@
                 <input type="email" name="email" id="email" placeholder="email" required>
             </p>
         </form>
+
+
+        <h1>Race Registration!</h1>
+        <form action="/race">
+            <p>
+                <label for="first">First Name</label>
+                <input type="text" name="first" id="first" required>
+                <label for="last">Last Name</label>
+                <input type="text" name="last" id="last" required>
+            </p>
+            <p>Select a Race:</p>
+            <div>
+                <p>
+                    <input type="radio" name="race" id="5k" value="5k">
+                    <label for="5k">Fun Run 5k</label><br>
+                    <input type="radio" name="race" id="half" value="half">
+                    <label for="half">Half Marathon</label><br>
+                    <input type="radio" name="race" id="full" value="full">
+                    <label for="full">Full Marathon</label><br>
+                </p>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div>
+                <p>
+                    <label for="age">Select Age Group</label>
+                    <select name="age" id="age">
+                        <option value="under 18">Under 18</option>
+                        <option value="over 18">Over 18</option>
+                        <option value="old af">Old af</option>
+                    </select>
+                </p>
+            </div>
+            <button>Register!</button>
+
+
+        </form>
+
 
 
     </main>
