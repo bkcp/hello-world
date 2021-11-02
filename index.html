@@ -128,6 +128,49 @@
 
             </table>
 
+            <table>
+                <h1>Best Synths</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Synth</th>
+                            <th rowspan="2">Coast</th>
+                            <th rowspan="2">Quality</th>
+                            <th colspan="2">Average Price</th>
+
+                        </tr>
+                        <tr>
+                            <th>low</th>
+                            <th>high</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Moog</td>
+                            <td>East</td>
+                            <td>Good</td>
+                            <td>200$</td>
+                            <td>9000$</td>
+                        </tr>
+                        <tr>
+                            <td>Buchla</td>
+                            <td>West</td>
+                            <td>Great</td>
+                            <td>1000$</td>
+                            <td>10000$</td>
+                        </tr>
+                        <tr>
+                            <td>Roland</td>
+                            <td>East</td>
+                            <td>Ok</td>
+                            <td>200$</td>
+                            <td>900$</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </table>
+
             <h1>Forms</h1>
             <form action="/taco">
                 <p>
@@ -182,7 +225,7 @@
                     <select name="meal" id="meal">
                         <option value="veg">Veg</option>
                         <option value="fish">fish</option>
-                        <option value="steak">Steak</option>
+                        <option value="steak" selected>Steak</option>
                     </select>
                 </p>
 
@@ -191,7 +234,7 @@
                 <p>
                 <h2>RANGE</h2>
                 <label for="cheese">ACheese</label>
-                <input type="range" id="cheese" name=mount of "q" min="1" max="10" value="1" step="2">
+                <input type="range" id="cheese" name="cheese_amount" min="1" max="10" value="1" step="2">
                 <select name="cheesetype" id="cheesetype">
                     <option value="limburg">Limburg</option>
                     <option value="gouda">gouda</option>
@@ -265,8 +308,47 @@
                 <button>Register!</button>
 
 
+
+
             </form>
 
+            <h1>Love</h1>
+            <form action="/lov">
+                <p>
+                    <label for="first">FirstName</label>
+                    <input type="text" name="first" id="first">
+                    <label for="last">LastName</label>
+                    <input type="text" name="last" id="last">
+                </p>
+
+                <p>
+                    Select Language:
+                </p>
+                <p>
+                    <input type="radio" name="love" id="touch" value="touch">
+                    <label for="touch">Touch</label><br>
+                    <input type="radio" name="love" id="time" value="time">
+                    <label for="time">Time</label><br>
+                    <input type="radio" name="love" id="words" value="words">
+                    <label for="words">Words</label>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="EMAIL" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="PASSWORD">
+                </p>
+                <p>
+                    <label for="age">Age</label>
+                    <select name="age" id="age">
+                        <option value="under 21">under 21</option>
+                        <option value="over 21">over 21</option>
+                        <option value="old af">old AF</option>
+                    </select>
+                </p>
+                <button>Apply!</button>
+
+            </form>
 
 
         </main>
