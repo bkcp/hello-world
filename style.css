@@ -1,12 +1,55 @@
 #love_form {
   text-decoration: overline;
-  color: blue;
+  color: #946344;
+}
+
+.favorites {
+  color: #a29da3;
 }
 h1 {
-  color: red;
+  color: #9e7682;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #605770;
+  text-align: center;
 }
 h2 {
-  color: blue;
+  color: #605770;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+  font-weight: bold;
+}
+
+li {
+  text-align: left;
+  font-weight: lighter;
+
+  font-variant: unset;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: #f3e8d6;
+}
+
+.tag {
+  background-color: #9e7682;
+}
+
+footer + p {
+  background-color: #85807a;
+}
+input[type="password"] {
+  color: red;
+}
+
+button:hover {
+  color: red;
+}
+a:hover {
+  color: red;
+  text-decoration: overline;
+}
+
+p:nth-of-type(3n) {
+  background-color: blue;
 }
